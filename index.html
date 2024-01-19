@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.container  p::first-letter {
+    font-size: 42px;
+    color: white;
+}
+.container  p{
+    color: white;
+}
+h1 span{
+    font-style: bold;
+    font-size: 40px;
+    color:#2C3335;
+    
+    
+}
+
+body{
+    width: 100%;
+    background-color: #2C3335;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    width: 100%;
+    background-color:rgba(0,0,0,0,6) ;
+    position: fixed;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 120px;
+    backdrop-filter: blur(20px);
+}
+nav h1 {
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+    text-transform: uppercase;
+    float: left;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: azure;
+    font-size: 17px;
+    padding: 0px 16px;
+    display: block;
+}
+nav ul li a:hover{
+ background-color: rgb(218, 159, 9);
+}
+nav ul li ul{
+    position: absolute;
+    display: none;
+    background-color: #2C3335;
+    border-radius: 0px 0px 5px 5px;
+}
+nav ul li:hover ul{
+    display: block;
+    transition: 
+}
+nav ul li ul li{
+    line-height: 1;
+    width: 190px;
+    border-radius: 5px;
+    padding: 6px;
+}
+nav ul li ul li a{
+    padding: 10px 16px;
+}
+nav ul li ul li a:hover{
+    background-color: rgb(218, 159, 9);
+}
+.container{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5% 5% 5% 5%;
+}
+.container h1 {
+    font-size: 80px;
+    text-align: left;
+    color: aliceblue ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container h1 span{
+    color:rgb(218, 159, 9);
+    font-size: 150px;
+    font-family: monospace;
+    
+   
+}
+.food{
+    /* border: px solid orange; */
+     width: 25%;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+  }
+
+
+        .food img{
+            width: 100% !important;
+            border-radius: 10px;
+        }
+        /* .food img h2{
+            width: 500px;
+            padding: 15px;
+            margin: 10px;
+            text-align: justify;
+            
+            
+        } */
+        
+        .menu-container{
+            display: flex;
+            color: aliceblue;
+            
+            justify-content: center;
+            gap: 20px;
+            padding: 5% 5% 5% 5%;
+            
+        }
+      .menu-container .food img:hover{
+        transform: scale(1.1);
+        transition: transform 1s ease-in-out ;
+       }
+      hr{
+        width: 40px;
+        margin-top: 15px;
+        border-color: rgb(218, 159, 9);
+      }
+      .menu-container h2{
+        text-align: center;
+        
+        
+      }
+      .menu-container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+      }
+      
+    </style>
+</head>
+
+<body>
+    
+    
+    <nav>
+        
+        <h1>Provi Pro</h1>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a>
+              <ul>
+                <li><a href="">Web Desing</a></li>
+                <li><a href="">Web Development</a></li>
+                <li><a href="">Program</a></li>
+                <li><a href="">Digital Marketing</a></li>
+              </ul>
+            </li>
+            <li><a href="">contact</a></li>
+            
+        </ul>
+    </nav>
+      
+    <div class="container">
+        
+        <h1> <span>P</span>hotography</h1>
+       
+        <p>These photography quotes offer insights into the minds of photography greats, from how they see the world and approach the art of making a photo,<br> to their views on cameras, to ideas on how to improve one’s photography skills.</p>
+        
+        <hr>
+      </div>
+     <div class="menu-container">
+        <div class="food">
+            <img src="23.orange.jpg" alt="">
+            <h2>Price:1</h2>
+         </div>
+         <div class="food">
+            <img src="lemon1 (3).jpg" alt="">
+            <h2>Price:1</h2>
+         </div>
+         <div class="food">
+            <img src="lemon.jpg" alt="">
+            <h2>Price:1</h2>
+         </div>
+         <div class="food">
+            <img src="lemon1 (1).jpg" alt="">
+            <h2>Price:1</h2>
+         </div>
+         <div class="food">
+            <img src="new.orange.jpg" alt="">
+            <h2>Price:1</h2>
+         </div>
+         <div class="food">
+            <img src="orange.half.jpg" alt="">
+            <h2>Price:1</h2>
+         </div>
+         <div class="food">
+            <img src="orange.leaf.jpg" alt="">
+            <h2>Price:1</h2>
+         </div>
+         <div class="food">
+            <img src="orange.many.jpg" alt="">
+            <h2>Price:1</h2>
+         </div>
+         <div class="food">
+            <img src="12.orange.jpg" alt="">
+            <h2>Price:1</h2>
+         </div>
+     </div>
+      
+        
+    </div>
+    
+      
+</body>
+</html>
