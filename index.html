@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
+    <script src="https://kit.fontawesome.com/5319acd44d.js" crossorigin="anonymous"></script>
     <style>
         *{
     margin: 0px;
@@ -15,7 +16,7 @@
 
 .container  p::first-letter {
     font-size: 42px;
-    color: white;
+    color: rgb(218, 159, 9);
 }
 .container  p{
     color: white;
@@ -30,7 +31,7 @@ h1 span{
 
 body{
     width: 100%;
-    background-color: #2C3335;
+    background-color: ;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -42,6 +43,7 @@ nav{
     line-height: 75px;
     padding: 0px 120px;
     backdrop-filter: blur(20px);
+    z-index: 10;
 }
 nav h1 {
     font-size: 32px;
@@ -98,6 +100,7 @@ nav ul li ul li a:hover{
     flex-direction: column;
     justify-content: center;
     padding: 5% 5% 5% 5%;
+    background-color: #2C3335;
 }
 .container h1 {
     font-size: 80px;
@@ -105,12 +108,13 @@ nav ul li ul li a:hover{
     color: aliceblue ;
     font-family: Arial, Helvetica, sans-serif;
 }
-.container h1 span{
+.container h1 span {
     color:rgb(218, 159, 9);
     font-size: 150px;
     font-family: monospace;
     
-   
+    
+    
 }
 .food{
     /* border: px solid orange; */
@@ -124,6 +128,7 @@ nav ul li ul li a:hover{
         .food img{
             width: 100% !important;
             border-radius: 10px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
         }
         /* .food img h2{
             width: 500px;
@@ -137,16 +142,18 @@ nav ul li ul li a:hover{
         .menu-container{
             display: flex;
             color: aliceblue;
-            
+            background-color: #1c1c1c;
             justify-content: center;
             gap: 20px;
             padding: 5% 5% 5% 5%;
             
         }
-      .menu-container .food img:hover{
+        .menu-container .food img:hover {
         transform: scale(1.1);
-        transition: transform 1s ease-in-out ;
-       }
+        transition: transform 1s ease-in-out;
+       
+        
+      }
       hr{
         width: 40px;
         margin-top: 15px;
@@ -163,8 +170,41 @@ nav ul li ul li a:hover{
             align-items: center;
             flex-wrap: wrap;
       }
+      .container img{
+            width: 80px;
+       
+      }
+      .container .photo img:hover{
+        transform: scale(1.1);
+        transition: transform 1s ease-in-out;
+
+      }
+      .container h5{
+        color: silver;
+      }
+      /* footer-container */
+
+      .footer-container {
+        padding: 5% 5% 5% 5%;
+        background-color: white;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        
+      }
+    .footer-container span  a {
+       color: #2C3335;
+       padding: 10px;
+       }
+       hr{
+        width: 110px;
+        margin-top: 15px;
+        border-color: yellow;
+       }
       
-    </style>
+
+
+ </style>
 </head>
 
 <body>
@@ -172,7 +212,7 @@ nav ul li ul li a:hover{
     
     <nav>
         
-        <h1>Provi Pro</h1>
+        <h1>Pro</h1>
         <ul>
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
@@ -184,7 +224,7 @@ nav ul li ul li a:hover{
                 <li><a href="">Digital Marketing</a></li>
               </ul>
             </li>
-            <li><a href="">contact</a></li>
+            <li><a href="">Contact</a></li>
             
         </ul>
     </nav>
@@ -194,51 +234,62 @@ nav ul li ul li a:hover{
         <h1> <span>P</span>hotography</h1>
        
         <p>These photography quotes offer insights into the minds of photography greats, from how they see the world and approach the art of making a photo,<br> to their views on cameras, to ideas on how to improve one’s photography skills.</p>
-        
         <hr>
-      </div>
-     <div class="menu-container">
+        <br>
+       <div class="photo">
+        <img src="provi.png" alt="">
+       </div>
+        <h5>Abdullah Provi</h5>
+    </div>
+
+    <div class="menu-container">
         <div class="food">
             <img src="23.orange.jpg" alt="">
-            <h2>Price:1</h2>
-         </div>
-         <div class="food">
+            <h2>Orange</h2>
+        </div>
+        <div class="food">
             <img src="lemon1 (3).jpg" alt="">
-            <h2>Price:1</h2>
-         </div>
+            <h2>Orange</h2>
+        </div>
          <div class="food">
             <img src="lemon.jpg" alt="">
-            <h2>Price:1</h2>
+            <h2>Lemon</h2>
          </div>
          <div class="food">
             <img src="lemon1 (1).jpg" alt="">
-            <h2>Price:1</h2>
+            <h2>Lemon</h2>
          </div>
          <div class="food">
             <img src="new.orange.jpg" alt="">
-            <h2>Price:1</h2>
+            <h2>Lemon</h2>
          </div>
          <div class="food">
             <img src="orange.half.jpg" alt="">
-            <h2>Price:1</h2>
+            <h2>Orange</h2>
          </div>
          <div class="food">
             <img src="orange.leaf.jpg" alt="">
-            <h2>Price:1</h2>
+            <h2>Orange</h2>
          </div>
          <div class="food">
             <img src="orange.many.jpg" alt="">
-            <h2>Price:1</h2>
+            <h2>Orange</h2>
          </div>
          <div class="food">
             <img src="12.orange.jpg" alt="">
-            <h2>Price:1</h2>
+            <h2>Orange</h2>
          </div>
-     </div>
-      
+    </div>
+    <div class="footer-container">
+        <span>
+            <a href="https://www.facebook.com/md.provi"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/abdullah_provi/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/+8801785638423"><i class="fa-brands fa-whatsapp"></i></a>
+            <hr>
+         </span>
+        
         
     </div>
-    
       
 </body>
 </html>
